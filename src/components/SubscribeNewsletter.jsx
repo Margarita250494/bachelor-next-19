@@ -1,9 +1,12 @@
 'use client'
 import MainButton from './buttons/MainButton'
 import useNewsletter from '../utils/hooks/useNewsletter.hook'
-import { Suspense} from 'react'
-import {ToastContainer} from '@/components/ToastContainer'
+import dynamic from 'next/dynamic'
 
+const ToastProvider = dynamic(
+  () => import('@/components/ToastContainer'),
+  { ssr: false }
+);
 function SubscribeNewsletter() {
   const {email, isSubmitting, handleEmailChange, subscribe} = useNewsletter();
 
@@ -30,13 +33,12 @@ function SubscribeNewsletter() {
 
       />
 
-      <Suspense fallback={null}>
-        <ToastContainer
+
+        <ToastProvider
           autoClose={4000}
           limit={1}
           closeButton={false}
         />
-      </Suspense>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 'use client'
 
-import {  Suspense, useEffect } from "react";
+import {  useEffect } from "react";
 import AllRights from './AllRights'
 import MainButton from './buttons/MainButton'
 import BrandTitle from './BrandTitle'
@@ -10,8 +10,12 @@ import Select from './form/Select'
 import {genderData, modeData} from '../utils/data/form.data'
 import SuccessMessage from './form/SuccessMessage'
 import useAppointmentForm from '../utils/hooks/useAppointment.hook'
-import {ToastContainer} from '@/components/ToastContainer'
+import dynamic from 'next/dynamic'
 
+const ToastProvider = dynamic(
+  () => import('@/components/ToastContainer'),
+  { ssr: false }
+);
 function AppointmentForm() {
   useEffect(() => {
     window.scrollTo({top: 0, behavior: "smooth"});
@@ -105,13 +109,12 @@ function AppointmentForm() {
 
       <AllRights hasStyle />
 
-      <Suspense fallback={null}>
-        <ToastContainer
+        <ToastProvider
           autoClose={5000}
           limit={1}
           closeButton={false}
         />
-      </Suspense>
+
     </>
   );
 }
