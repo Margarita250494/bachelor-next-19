@@ -23,4 +23,16 @@ Diese Version untersucht das Zusammenspiel von:
 - React Compiler
 
 ## Messergebnisse
+###Webcarbon
 ![Webcarbon Ergebnis](/webcarbon.png)
+###Ecograder
+![Ecograder Ergebnis1](/ecograder1.png)
+![Ecograder Ergebnis2](/ecograder2.png)
+###DigitalBeacon
+![Digital Beacon Ergebnis1](/db1.png)
+![Digital Beacon Ergebnis2](/db2.png)
+###Chrome Dev Tools
+![Chrome Dev Tools HTML](/devhtml.png)
+![Chrome Dev Tools Styles](/devhstyles.png)
+![Chrome Dev Tools Images](/devimages.png)
+![Chrome Dev Tools HScripts](/devscripts.png)
