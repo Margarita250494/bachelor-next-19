@@ -1,5 +1,8 @@
 # Next.js React 19 – Optimized (React Compiler)
 
+## 🔗 Basierend auf Originalcode
+Dieses Repository basiert auf dem Open-Source-Projekt [Health-Plus](https://github.com/Alkaison/Health-Plus) (MIT License).
+
 ## Beschreibung
 Dieses Repository enthält die **fortschrittlichste Variante** der Landingpage mit **Next.js und React 19**, inklusive React Compiler.
 
@@ -23,15 +26,15 @@ Diese Version untersucht das Zusammenspiel von:
 - React Compiler
 
 ## Messergebnisse
-###Webcarbon
+### Webcarbon
 ![Webcarbon Ergebnis](/webcarbon.png)
-###Ecograder
+### Ecograder
 ![Ecograder Ergebnis1](/ecograder1.png)
 ![Ecograder Ergebnis2](/ecograder2.png)
 ###DigitalBeacon
 ![Digital Beacon Ergebnis1](/db1.png)
 ![Digital Beacon Ergebnis2](/db2.png)
-###Chrome Dev Tools
+### Chrome Dev Tools
 ![Chrome Dev Tools HTML](/devhtml.png)
 ![Chrome Dev Tools Styles](/devhstyles.png)
 ![Chrome Dev Tools Images](/devimages.png)
