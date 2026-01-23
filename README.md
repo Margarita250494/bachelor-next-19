@@ -23,3 +23,4 @@ Diese Version untersucht das Zusammenspiel von:
 - React Compiler
 
 ## Messergebnisse
+![Webcarbon Ergebnis](/webcarbon.png)
